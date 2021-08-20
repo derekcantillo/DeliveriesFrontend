@@ -13,7 +13,8 @@ const ModalComponent=(props)=>{
                     Solicitante: {props.domicilio.nombreClienteOrigen} <br></br>
                     Direccion Solicitante:  {props.domicilio.direccionOrigen} <br></br>
                     Destinatario: {props.domicilio.nombreClienteDestino}<br></br>
-                    Direccion Destinatario: {props.domicilio.direccionDestino} </Modal.Body>
+                    Direccion Destinatario: {props.domicilio.direccionDestino} <br></br>
+                    Fecha Domicilio: {props.domicilio.fechaDomicilio}</Modal.Body>
         <Modal.Footer>
           
           <Button variant="primary" onClick={props.closeModal}>

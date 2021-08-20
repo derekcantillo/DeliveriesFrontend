@@ -7,13 +7,14 @@ export default function TablaMensajeros(props) {
   const dataTableRef = useRef(false)
  
   return (
+
     <div className="card card-small mb-3 shadow col-sm-12">
         <div className="card-header border-bottom ">
-                <h6 className="m-0">Listado de Mensajeros</h6>
+                <h6 >Listado de Mensajeros</h6>
         </div>
-        <div className="card-body m-4 scrollable">
+        <div className="card-body table-responsive-sm table-responsive-md">
           
-          <table  className="table mt-2 border" id="table-mensajeros">
+      <table  className="table mt-2 border mt-sm-0 " id="table-mensajeros">
       <thead className="table col-sm-12" >
         <tr>
           <th>#</th>

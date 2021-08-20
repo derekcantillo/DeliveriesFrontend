@@ -56,22 +56,11 @@ const HistorialDomiciliosMensajeros = (props) => {
               <td>{m.nombreClienteOrigen}</td>
               <td>Undifined</td>
             
-              <td>
-                <div className="row">
-                
-                <a href="#">Detalles</a>
-                <div class="topbar-divider d-none d-sm-block"></div>
-                <a href="#">Editar</a>
-                <div class="topbar-divider d-none d-sm-block"></div>
-                <a href="#">Cerrar</a>
-                </div>
-              
-              </td>
             </tr>
           ))
         ) : (
           <tr>
-            <td colSpan={4}>No existen domicilios</td>
+            <td colSpan={4}>No existen domicilios para el mensajero {currentMensajeroId}</td>
           </tr>
         )}
       </tbody>

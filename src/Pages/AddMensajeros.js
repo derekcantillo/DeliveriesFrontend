@@ -11,7 +11,7 @@ const AddMensajeros =()=>{
     return(
      
         <div className="content bg-light">
-          <div className="container-fluid mt-5 p-5">
+          <div className="container-fluid pb-5 ">
           <div class="page-header row no-gutters ">
               <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
                 <span class="text-uppercase page-subtitle">Dom Santa Marta</span>

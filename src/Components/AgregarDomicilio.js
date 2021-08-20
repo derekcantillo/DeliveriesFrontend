@@ -15,6 +15,7 @@ export const AgregarDomicilioForm = (props)=>{
         direccionDestino: null,
         nombreClienteOrigen: null,
         nombreClienteDestino: null,
+        fechaDomicilio:null,
         mensajero:null
     }
     
@@ -94,11 +95,11 @@ export const AgregarDomicilioForm = (props)=>{
                 <h5 className="m-0">Cliente Origen</h5>
         </div>
         <div className="form-group row">
-            <div className="col-6">
+            <div className="col-lg-6 col-sm-12">
             <label>Nombre Cliente</label>
             <input id="nombreClienteOrigen" className="form-control" type="text" name="nombreClienteOrigen" placeholder="Nombres" value={domicilioFormState.nombreClienteOrigen}  onChange={handleOnChange}/>
             </div>
-            <div className="col-6">
+            <div className="col-lg-6 col-sm-12">
             <label>Direccion</label>
             <input id="direccionOrigen" className="form-control" type="text" name="direccionOrigen" placeholder="Ingresa dirección..." value={domicilioFormState.direccionOrigen}  onChange={handleOnChange}/>
             </div>
@@ -108,15 +109,15 @@ export const AgregarDomicilioForm = (props)=>{
             
       
       <div className="form-group row">
-            <div className="col-4">
+            <div className="col-lg-4 col-sm-12">
             <label>Celular</label>
             <input id="nombre" className="form-control" type="text" name="nombre" placeholder="Celular"  />
             </div>
-            <div className="col-4">
+            <div className="col-lg-4 col-sm-6">
             <label>Fecha Domicilio</label>
-            <input id="nombre"className="form-control" type="date" name="nombre"/>
+            <input id="fechaDomicilio"className="form-control" type="date" name="fechaDomicilio" value={domicilioFormState.fechaDomicilio}  onChange={handleOnChange}/>
             </div>
-            <div className="col-4">
+            <div className="col-lg-4 col-sm-6">
             <label>Hora Recoger</label>
             <input id="nombre" className="form-control" type="time" name="nombre"/>
             </div>
@@ -125,11 +126,11 @@ export const AgregarDomicilioForm = (props)=>{
                 <h5 className="m-0">Cliente Destino</h5>
         </div>
         <div className="form-group row">
-            <div className="col-6">
+            <div className="col-lg-6 col-sm-12">
             <label>Nombre Cliente</label>
             <input id="nombreClienteDestino" className="form-control" type="text" name="nombreClienteDestino" placeholder="Nombres" value={domicilioFormState. nombreClienteDestino}  onChange={handleOnChange}/>
             </div>
-            <div className="col-6">
+            <div className="col-lg-6 col-sm-12">
             <label>Direccion</label>
             <input id="direccionDestino" className="form-control" type="text" name="direccionDestino" placeholder="Direccion" value={domicilioFormState. direccionDestino}  onChange={handleOnChange}/>
             </div>
@@ -137,7 +138,7 @@ export const AgregarDomicilioForm = (props)=>{
      
 
       <div className="form-group row">
-            <div className="col-6">
+            <div className="col-lg-6 col-sm-12">
             <label>Celular</label>
             <input  id="nombre" className="form-control" type="text" name="nombre" placeholder="Celular" />
             </div>    
@@ -155,7 +156,7 @@ export const AgregarDomicilioForm = (props)=>{
         </div>
 
         <div className="form-group row">
-          <div className="col-6">
+          <div className="col-lg-6 col-sm-6">
           <label>Mensajeros:</label>
              <select  name="mensajero"className="form-control form-select form-select-sm" value={domicilioFormState.mensajero} onChange={handleOnChange}>
               {estadoListaMensajeros.map((m)=>(
@@ -165,7 +166,7 @@ export const AgregarDomicilioForm = (props)=>{
                                             
             </select>
               </div>                     
-           <div>
+           <div className="col-lg-6 col-sm-6">
            <label>Valor Domicilio</label>
 
 <input id="valor" className="form-control" type="text" name="valor" placeholder="$$$$$" value={domicilioFormState.valor}  onChange={handleOnChange}></input>

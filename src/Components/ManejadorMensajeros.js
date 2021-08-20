@@ -107,7 +107,7 @@ const ManejadorMensajeros = () => {
 
   return (
     <div className="row">
-      <div className="col-sm-12 col-md-12 col-lg-12 col-xl-8">
+      <div className="col-sm-12 col-md-12 col-lg-8 col-xl-8">
         
         <TablaMensajeros
           mensajeros={estadoListaMensajeros} 
@@ -116,7 +116,7 @@ const ManejadorMensajeros = () => {
         />
         
       </div>
-      <div className="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+      <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
         {!modoEdicion ? (
          
            
